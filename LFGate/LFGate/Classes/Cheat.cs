@@ -29,7 +29,7 @@ namespace LFGate.Classes
                         //var l = Utils.PixelSearch(sourceRectangle, CrosshairEnemy, 5);
                         if (Utils.DetectionPixelSearch(sourceRectangle, CrosshairEnemy, 5))
                         {
-                            LFInput.LFInput.Click(LFInput.LFInput.Enums.Buttons.LEFT, (Settings.Humanize) ? 10 : 5, Settings.Humanize);
+                            LFInput.LFInput.Click(LFInput.LFInput.Enums.Buttons.LEFT, (Settings.Humanize) ? 10 : Settings.PerformanceMode ? 5 : 0, Settings.Humanize);
                         }
                     }
                 }
@@ -37,6 +37,16 @@ namespace LFGate.Classes
                 if (LFInput.LFInput.IsKeyPushedDown(Keys.Insert))
                 {
                     Settings.ShowMenu = !Settings.ShowMenu;
+                    Thread.Sleep(150);
+                }
+                if (LFInput.LFInput.IsKeyPushedDown(Keys.End))
+                {
+                    Settings.StreamProof = !Settings.StreamProof;
+                    Thread.Sleep(150);
+                }
+                if (LFInput.LFInput.IsKeyPushedDown(Keys.Home))
+                {
+                    Settings.PerformanceMode = !Settings.PerformanceMode;
                     Thread.Sleep(150);
                 }
                 if (LFInput.LFInput.IsKeyPushedDown(Keys.F1))
@@ -55,7 +65,7 @@ namespace LFGate.Classes
                     Thread.Sleep(150);
                 }
                 Task.Delay(1);
-                Thread.Sleep(25);
+                Thread.Sleep(Settings.PerformanceMode ? 25 : 5);
             }
         }
 

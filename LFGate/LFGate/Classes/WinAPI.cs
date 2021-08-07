@@ -16,9 +16,6 @@ namespace LFGate.Classes
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool GetWindowRect(IntPtr hWnd, out RECT lpRect);
 
-        [DllImport("kernel32.dll")]
-        public static extern bool SetProcessWorkingSetSize(IntPtr proc, int min, int max);
-
         [StructLayout(LayoutKind.Sequential)]
         public struct RECT
         {
@@ -26,6 +23,18 @@ namespace LFGate.Classes
             public int Top;         // y position of upper-left corner  
             public int Right;       // x position of lower-right corner  
             public int Bottom;      // y position of lower-right corner  
+        }
+
+        [DllImport("kernel32.dll")]
+        public static extern bool SetProcessWorkingSetSize(IntPtr proc, int min, int max);
+
+        [DllImport("user32.dll")]
+        public static extern bool SetWindowDisplayAffinity(IntPtr hwnd, DisplayAffinity affinity);
+
+        public enum DisplayAffinity : uint
+        {
+            None = 0,
+            Monitor = 1
         }
     }
 }
