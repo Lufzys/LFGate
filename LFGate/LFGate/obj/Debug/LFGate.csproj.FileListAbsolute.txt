@@ -1,0 +1,13 @@
+C:\Users\Furkan\source\repos\LFGate\LFGate\bin\Debug\LFGate.exe.config
+C:\Users\Furkan\source\repos\LFGate\LFGate\bin\Debug\LFGate.exe
+C:\Users\Furkan\source\repos\LFGate\LFGate\bin\Debug\LFGate.pdb
+C:\Users\Furkan\source\repos\LFGate\LFGate\bin\Debug\GameOverlay.xml
+C:\Users\Furkan\source\repos\LFGate\LFGate\bin\Debug\SharpDX.Direct2D1.xml
+C:\Users\Furkan\source\repos\LFGate\LFGate\bin\Debug\SharpDX.DXGI.xml
+C:\Users\Furkan\source\repos\LFGate\LFGate\obj\Debug\LFGate.csproj.AssemblyReference.cache
+C:\Users\Furkan\source\repos\LFGate\LFGate\obj\Debug\LFGate.csproj.CoreCompileInputs.cache
+C:\Users\Furkan\source\repos\LFGate\LFGate\obj\Debug\LFGate.csproj.CopyComplete
+C:\Users\Furkan\source\repos\LFGate\LFGate\obj\Debug\LFGate.exe
+C:\Users\Furkan\source\repos\LFGate\LFGate\obj\Debug\LFGate.pdb
+C:\Users\Furkan\source\repos\LFGate\LFGate\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Furkan\source\repos\LFGate\LFGate\obj\Debug\LFGate.csproj.Fody.CopyLocal.cache
